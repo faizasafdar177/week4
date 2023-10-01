@@ -1,17 +1,20 @@
 #include<iostream>
 using namespace std;
-void inchesToFeet(float measurement);
+void possible_true(int p1,int p2);
+void possible_false(int p1,int p2);
 main()
-{  float measurement;
-cout<<"Enter the measurement in inches: ";
-cin>>measurement;
-
-inchesToFeet(measurement);
-      
+{int p1,p2,p3;
+cout<<"Enter your position: ";
+cin>>p1;
+cout<<"Enter your friend's position: ";
+cin>>p2;
+p3=p2-p1;
+if(p3<6)
+{possible_true(p1,p2);}
+if(p3>6)
+{possible_false(p1,p2);}
 }
-void inchesToFeet(float measurement)
-{float inches;
-inches=measurement/12;
-
-cout<<"Equivalent in feet: "<<inches;
-} 
+void possible_true(int p1,int p2)
+{cout<<"true";}
+void possible_false(int p1,int p2)
+{cout<<"false";}

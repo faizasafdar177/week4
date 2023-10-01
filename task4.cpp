@@ -1,14 +1,19 @@
 #include<iostream>
 using namespace std;
-void fuel_needed();
+void check_speed(int speed);
+void check_speed1(int speed);
 main()
-{  
-fuel_needed();
+{ 
+int speed;
+cout<<"Speed: ";
+cin>>speed;
+if(speed>100)
+{check_speed(speed);}
+if(speed<100)
+{check_speed1(speed);}
 }
-void fuel_needed()
-{float distance,fuel_need;
-cout<<"Enter the distance: ";
-cin>>distance;
-fuel_need=distance*10;
-cout<<"Fuel needed: "<<fuel_need;
-}
+void check_speed(int speed)
+{cout<<"Halt... YOU WILL BE CHALLENGED!!!";}
+void check_speed1(int speed)
+{cout<<"Perfect! You're going good.";}
+
